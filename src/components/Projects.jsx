@@ -13,10 +13,10 @@ import { ReactComponent as More } from '../assets/images/more.svg';
 import HTMLFlipBook from 'react-pageflip'
 
 const Projects = () => {
- 
-  
- 
-  
+
+
+
+
   return (
     <div >
       <div className='row content-3'>
@@ -28,6 +28,8 @@ const Projects = () => {
               <li>Handled 6 modules and implemented new features and played a crucial role in bug fixing </li>
               <li>Implemented a dashboard application for data visualization using React.js, providing users with real-time insights through interactive charts and graphs</li>
               <li>Implemented Localization using i18next</li>
+              <li>Deployed in AWS.</li>
+              <li>Integrated payment gateway using react RazorPay</li>
             </ul>
 
           </div>
@@ -41,10 +43,10 @@ const Projects = () => {
               <More style={{ height: '20px', width: '20px', color: 'blue', marginLeft: '5px' }} />
             </div>
           </div>
-          <div><img src={t3} alt="" style={{ width: "100%", height: '100%' }}  /></div>
-          <div><img src={t5} alt="" style={{ width: "100%", height: '100%' }}  /></div>
-          <div><img src={t4} alt="" style={{ width: "100%", height: '100%' }}  /></div>
-          <div><img src={t2} alt="" style={{ width: "100%", height: '100%' }}  /></div>
+          <div><img src={t3} alt="" style={{ width: "100%", height: '100%' }} /></div>
+          <div><img src={t5} alt="" style={{ width: "100%", height: '100%' }} /></div>
+          <div><img src={t4} alt="" style={{ width: "100%", height: '100%' }} /></div>
+          <div><img src={t2} alt="" style={{ width: "100%", height: '100%' }} /></div>
 
 
 
@@ -59,6 +61,7 @@ const Projects = () => {
             <ul>
               <li>Implemented state management using Redux</li>
               <li>Perform unit testing, ensure quality assurance of applications through system testing.</li>
+              <li>Deployed in Hostinger.</li>
             </ul>
           </div>
           <div className="col-lg-6">
@@ -72,6 +75,11 @@ const Projects = () => {
             <ul>
               <li>Converted an existing project from Vue.js</li>
               <li>Write high quality code following MVC architecture</li>
+              <li>Deployed in Hostinger</li>
+              <li>
+                Integrated payment gateway with react RazorPay
+              </li>
+
             </ul>
           </div>
           <div className="col-lg-6 order-lg-1">
