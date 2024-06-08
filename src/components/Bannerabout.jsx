@@ -32,6 +32,7 @@ const Bannerabout = () => {
               1000,
             ]}
             repeat={false}
+            className='typeanimation'
           />
           <div>
             <p>

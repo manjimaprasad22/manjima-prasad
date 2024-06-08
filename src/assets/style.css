@@ -33,6 +33,15 @@ body{
 .nav-background{
   background-color: white;
 }
+/* .aboutback{
+  margin-top: -24px;
+  
+  background-image: url('../assets/images/obg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 550px; 
+  background-position: center;
+} */
 .ima{
     height: 350px;
     width: auto;
@@ -196,4 +205,43 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh; /* Full viewport height */
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 330px) {
+  .typeanimation{
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .typeanimation{
+    margin-bottom: -78px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .typeanimation{
+    margin-bottom: -78px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .typeanimation{
+    margin-bottom: -78px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .typeanimation{
+    margin-bottom: -78px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .typeanimation{
+
+  }
 }

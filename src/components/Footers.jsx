@@ -75,7 +75,7 @@ const Footers = () => {
 
   {/* <!-- Copyright --> */}
   <div className="text-center p-4" style={{backgroundColor: "rgba(0, 0, 0, 0.05)"}}>
-    © {new Date().getFullYear()} Copyright:
+    © {new Date().getFullYear()} manjimaprasad22@gmail.com All rights reserved.
     <a className="text-reset fw-bold" href="https://mdbootstrap.com/"></a>
   </div>
   {/* <!-- Copyright --> */}
