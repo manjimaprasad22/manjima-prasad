@@ -74,7 +74,7 @@ const Projects = () => {
             <h3>Zimple-Q</h3>
             <ul>
               <li>Converted an existing project from Vue.js</li>
-              <li>Write high quality code following MVC architecture</li>
+              <li>Write high quality code following architecture</li>
               <li>Deployed in Hostinger</li>
               <li>
                 Integrated payment gateway with react RazorPay
