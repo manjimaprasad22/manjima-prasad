@@ -61,9 +61,9 @@ const Footers = () => {
           <p><i className="fas fa-home me-3"></i> Palazhi, Calicut, 673016</p>
           <p>
             <i className="fas fa-envelope me-3"></i>
-            manjimaprasa22@gmail.com
+            manjimaprasad22@gmail.com
           </p>
-          <p><i className="fas fa-phone me-3"></i> + 9400666191</p>
+          {/* <p><i className="fas fa-phone me-3"></i> + 9400666191</p> */}
         
         </div>
         {/* <!-- Grid column --> */}
