@@ -16,7 +16,7 @@ const Experience = () => {
     iconStyle={{ background: '#fff', color: '#fff' }}
     icon={<Futura />}
   >
-    <h4 className="vertical-timeline-element-title">Junior Software Solutions</h4>
+    <h4 className="vertical-timeline-element-title">Junior Software Engineer</h4>
     <h5 className="vertical-timeline-element-title">Hexeam Software solutions</h5>
     <p className="vertical-timeline-element-subtitle">Sahya Cyber Park, Calicut</p>
     <p>
