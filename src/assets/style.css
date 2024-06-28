@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('./fonts/CascadiaCode-2102.25/woff2/CascadiaCode.woff2') format('woff2'),
+       url('./fonts/CascadiaCode-2102.25/ttf/CascadiaCode.ttf') format('truetype');
+       /* url('../fonts/otf/cascadia-code.otf') format('opentype'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
     background-color: #f8f1e4;
     font-family: "Kanit", sans-serif;
@@ -22,6 +31,10 @@ body{
 .nav-items Nav{
     /* margin-right: 20px; */
     display: flex;
+    
+}
+Nav .m-3{
+  cursor: pointer;
 }
 .nav-items{
     font-size: large;
@@ -56,6 +69,15 @@ body{
 }
 .slider h2{
     padding: 50px;
+}
+.skills{
+  font-family: 'Cascadia Code', monospace;
+  border: 1px solid rgb(217, 217, 217);
+  padding: 15px 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: small;
+  font-weight: 400;
 }
 .card-img-top{
     width: 80px;
@@ -206,6 +228,45 @@ body{
   justify-content: center;
   height: 100vh; /* Full viewport height */
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 330px) {
   .typeanimation{

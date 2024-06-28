@@ -22,7 +22,7 @@ const Footers = () => {
   <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
    
     <div className="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
+      <span>Get connected with me on social networks:</span>
     </div>
    
     <div>
@@ -58,8 +58,8 @@ const Footers = () => {
         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           {/* <!-- Links --> */}
           <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i className="fas fa-home me-3"></i> Palazhi, Calicut, 673016</p>
-          <p>
+          <p><i className="fas fa-home me-3"></i> Calicut, 673521</p>
+          <p  style={{cursor:"pointer"}}>
             <i className="fas fa-envelope me-3"></i>
             manjimaprasad22@gmail.com
           </p>

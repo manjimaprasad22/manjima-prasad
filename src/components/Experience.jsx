@@ -19,9 +19,9 @@ const Experience = () => {
     <h4 className="vertical-timeline-element-title">Junior Software Engineer</h4>
     <h5 className="vertical-timeline-element-title">Hexeam Software solutions</h5>
     <p className="vertical-timeline-element-subtitle">Sahya Cyber Park, Calicut</p>
-    <p>
-      Skills: ReactJS, Redux, REST API, I18next, RazorPay, Material UI, HTML, CSS, Bootstrap, Git
-    </p>
+    <div className='skills'>
+     /ReactJS /Redux /REST_API /I18next /RazorPay /Material_UI /HTML /CSS /Bootstrap /Git
+    </div>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -32,9 +32,9 @@ const Experience = () => {
     <h4 className="vertical-timeline-element-title">MERN Stack Intern</h4>
     <h3 className="vertical-timeline-element-title">Futura Labs</h3>
     <p className="vertical-timeline-element-subtitle">Calicut</p>
-    <p>
-    Skills: ReactJS, REST API, Material UI, HTML, CSS, Bootstrap, NodeJs, Express, MongoDb, Git
-    </p>
+    <div className='skills'>
+     /ReactJS /REST_API /Material_UI /HTML /CSS /Bootstrap /NodeJs /Express /MongoDb /Git
+    </div>
   </VerticalTimelineElement>
   
 
