@@ -3,16 +3,20 @@ import '../assets/style.css'
 
 const Footers = () => {
     const handleTwitter=()=>{
-        window.location.href ='https://x.com/ManjimaPrasad?t=HIDlGnt2ogtKkYE3Rz2OZw&s=08'
+        const url ='https://x.com/ManjimaPrasad?t=HIDlGnt2ogtKkYE3Rz2OZw&s=08'
+        window.open(url, '_blank');
     }
     const handleinsta=()=>{
-        window.location.href ='https://www.instagram.com/_manj_ima___?utm_source=qr&igsh=bzZ6cjl3ajRrMnNp'
+        const url ='https://www.instagram.com/_manj_ima___?utm_source=qr&igsh=bzZ6cjl3ajRrMnNp'
+        window.open(url, '_blank');
     }
     const handlelinkedin=()=>{
-        window.location.href ='https://www.linkedin.com/in/manjima-prasad-pj-7934921b9/'
+        const url ='https://www.linkedin.com/in/manjima-prasad-pj-7934921b9/'
+        window.open(url, '_blank');
     }
     const handlegit=()=>{
-        window.location.href ='https://github.com/manjimaprasad22'
+        const url ='https://github.com/manjimaprasad22'
+        window.open(url, '_blank');
     }
   return (
     <div>

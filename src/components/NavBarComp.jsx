@@ -8,7 +8,8 @@ import logo from '../assets/images/icon.png'
 
 const NavBarComp = () => {     
   const handlegit=()=>{
-    window.location.href ='https://github.com/manjimaprasad22'
+    const url ='https://github.com/manjimaprasad22'
+    window.open(url, '_blank');
 } 
   return (
     
