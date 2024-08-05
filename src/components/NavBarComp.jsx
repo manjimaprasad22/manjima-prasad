@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../assets/style.css'
 import { Link, Element } from 'react-scroll';
-import logo from '../assets/images/icon.png'
+import pull from '../assets/images/pull.png'
 
 const NavBarComp = () => {     
   const handlegit=()=>{
@@ -56,7 +56,7 @@ const NavBarComp = () => {
             {/* </div> */}
             
             <Nav>
-              <button className='btn' onClick={handlegit}> <i className="fab fa-github"></i> Github</button>
+              <button className='btn' onClick={handlegit}> <i className="fab fa-github"></i> Github <img src={pull} alt="" className='pull' /></button>
             </Nav>
           </Nav>
           

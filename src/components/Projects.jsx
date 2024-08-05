@@ -8,6 +8,9 @@ import t2 from '../assets/images/t2.jpeg'
 import t3 from '../assets/images/t3.jpeg'
 import t4 from '../assets/images/t4.jpeg'
 import t5 from '../assets/images/t5.jpeg'
+import wea from '../assets/images/wea.jpg'
+import hall from '../assets/images/hall.jpg'
+import res from '../assets/images/res.jpg'
 import '../assets/style.css'
 import { ReactComponent as More } from '../assets/images/more.svg';
 import HTMLFlipBook from 'react-pageflip'
@@ -98,7 +101,44 @@ const Projects = () => {
           <div className="col-lg-6">
             <img src={crm} alt="CRM" className='img-fluid project-image' />
           </div>
+        </div> 
+        <div className='row content-3 mb-4'>
+          <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+            <h3>Restaurant ERP</h3>
+            <ul>
+              <li>Provides a real-time overview of key metrics such as sales, inventory levels, and recent
+                orders.</li>
+              <li>
+                Manages masters like supplier, branch, products etc.
+              </li>
+              <li>
+                Detailed reports on sales performance, inventory and financial summaries</li>
+            </ul>
+          </div>
+          <div className="col-lg-6 order-lg-1">
+            <img src={res} alt="hall" className='img-fluid project-image' />
+          </div>
         </div>
+        <div className='row content-3 mb-4'>
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <h3>Auditorium Booking Register</h3>
+            <ul>
+              <li>Developed an application for managing auditorium bookings, allowing user to add events
+                to a calendar.</li>
+              <li>
+                Event Scheduling: User can add events specifying the hall and time slot. Each hall and slot is
+                distinguished by a unique color for easy identification.</li>
+              <li>
+                Used daypilot library for event scheduler and Firebase for Backend
+              </li>
+
+            </ul>
+          </div>
+          <div className="col-lg-6">
+            <img src={hall} alt="hall" className='img-fluid project-image' />
+          </div>
+        </div>
+       
 
         <div className='row content-3 mb-4'>
           <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
@@ -109,6 +149,24 @@ const Projects = () => {
           </div>
           <div className="col-lg-6 order-lg-1">
             <img src={rent} alt="Hex-Rentals" className='img-fluid project-image' />
+          </div>
+        </div>
+        <div className='row content-3 mb-4'>
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <h3>Weather App</h3>
+            <ul>
+              <li>Developed a user-friendly weather application using the OpenWeatherMap API to provide
+                real-time weather information.</li>
+              <li>
+                Location Search: Users can search for weather details by city name or coordinates.</li>
+              <li>
+                Weather Details: Displayed current weather conditions, temperature, humidity, wind speed,
+                and weather forecasts.</li>
+
+            </ul>
+          </div>
+          <div className="col-lg-6">
+            <img src={wea} alt="CRM" className='img-fluid project-image' />
           </div>
         </div>
         {/* <div >

@@ -266,7 +266,34 @@ Nav .m-3{
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-
+.pull {
+    width: 22px;
+    /* position: fixed; */
+    margin-left: -6px;
+    margin-top: -6px;
+    position: absolute;
+    /* top: 100%; */
+    animation: slideIn .7s forwards;
+    /* margin-bottom: 12px; */
+}
+@keyframes slideIn {
+  0% {
+    margin-left: -6px;
+    margin-top: -100px;
+  }
+  70% {
+    margin-left: -6px;
+    margin-top: -6px;
+  }
+  80% {
+    margin-left: -6px;
+    margin-top: -10px;
+  }
+  100% {
+    margin-left: -6px;
+    margin-top: -6px;
+  }
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 330px) {
   .typeanimation{
