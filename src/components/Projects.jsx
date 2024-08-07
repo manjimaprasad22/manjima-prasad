@@ -10,7 +10,7 @@ import t4 from '../assets/images/t4.jpeg'
 import t5 from '../assets/images/t5.jpeg'
 import wea from '../assets/images/wea.jpg'
 import hall from '../assets/images/hall.jpg'
-import res from '../assets/images/res.jpg'
+import res from '../assets/images/dash.jpg'
 import '../assets/style.css'
 import { ReactComponent as More } from '../assets/images/more.svg';
 import HTMLFlipBook from 'react-pageflip'
