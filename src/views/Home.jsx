@@ -21,14 +21,14 @@ const Home = () => {
 
       <Bannerabout/>
     </Element>
-      <Element name='Skills' className='row col-12 slider'>
-        <h2>Skills</h2>
-      <Skills/>
-      </Element>
       <Element name='Experience' className='row col-12 slider'>
         <h2>Experience</h2>
         <Experience/>
       
+      </Element>
+      <Element name='Skills' className='row col-12 slider'>
+        <h2>Skills</h2>
+      <Skills/>
       </Element>
       <Element name='Projects' className='row col-12 slider'>
         <h2>Projects</h2>
