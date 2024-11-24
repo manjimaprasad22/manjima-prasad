@@ -16,12 +16,15 @@ const Education = () => {
                     <img src={ktu} className="education-logo" />
                     <div className="education-details col-10">
                         <p className="university-name">BTech - Information Technology</p>
-                        
                     </div>
                     </div>
 
                     <div className="col-12">
+                        <div className="d-flex">
+
                     <p className="course-name">Government Engineering College Idukki</p>
+                        <a href='https://www.cloudskillsboost.google/public_profiles/f453072c-0d0c-48a0-8c8b-7c68b4045dc3' target='_blank' style={{marginTop: "9px"}}>Badges <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                         <p className="education-year">2018-2022</p>
                         <p className="education-score">CGPA: 6.7</p>
                     </div>

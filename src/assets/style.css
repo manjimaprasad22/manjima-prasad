@@ -266,6 +266,38 @@ Nav .m-3{
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
+.pull {
+    width: 22px;
+    /* position: fixed; */
+    margin-left: -6px;
+    margin-top: -6px;
+    position: absolute;
+    /* top: 100%; */
+   
+    /* margin-bottom: 12px; */
+  }
+  
+  .pull {
+    animation: bounce 2s infinite;
+}
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 330px) {
