@@ -7,7 +7,7 @@ const Footers = () => {
         window.open(url, '_blank');
     }
     const handleinsta=()=>{
-        const url ='https://www.instagram.com/_manj_ima___?utm_source=qr&igsh=bzZ6cjl3ajRrMnNp'
+        const url ='https://www.instagram.com/_manj_ima___'
         window.open(url, '_blank');
     }
     const handlelinkedin=()=>{
