@@ -12,7 +12,21 @@ const Experience = () => {
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
    
-    date="2024 July - Ongoing"
+    date="2025 Jan - Ongoing"
+    iconStyle={{ background: '#fff', color: '#fff' }}
+    icon={<Futura />}
+  >
+    <h4 className="vertical-timeline-element-title">React JS Developer</h4>
+    <h5 className="vertical-timeline-element-title">Hybrhind (Alhind Group of Companies)</h5>
+    <p className="vertical-timeline-element-subtitle">Calicut</p>
+    <div className='skills'>
+     /ReactJS /TypeScript /Shadcn components /Forex /Gitlab /SASS
+    </div>
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+   
+    date="2024 July - 2024 Dec"
     iconStyle={{ background: '#fff', color: '#fff' }}
     icon={<Futura />}
   >
@@ -20,7 +34,7 @@ const Experience = () => {
     <h5 className="vertical-timeline-element-title">Axobis Technologies</h5>
     <p className="vertical-timeline-element-subtitle">Calicut</p>
     <div className='skills'>
-     /ReactJS /Redux /WEB_API /Material_UI /HTML /SASS /Git /WebPack
+     /ReactJS /Redux /WEB_API /Material_UI /HTML /Git /WebPack
     </div>
   </VerticalTimelineElement>
   <VerticalTimelineElement

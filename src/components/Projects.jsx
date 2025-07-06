@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import trip from '../assets/images/tripsman.png'
 import ayush from '../assets/images/ayush.png'
+import wed from '../assets/images/wed.png'
+import forex from '../assets/images/forx.png'
 import zq from '../assets/images/zq.png'
 import rent from '../assets/images/rent.png'
 import crm from '../assets/images/crm.jpeg'
@@ -22,6 +24,37 @@ const Projects = () => {
 
   return (
     <div >
+      <div className='container mt-4'>
+        <div className='row content-3 mb-4'>
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <h3>Wedding Portfolio</h3>
+            <ul>
+              <li>Crafted a digital wedding invitation using React.js.</li>
+              <li>Used Firebase for data storage and Netlify for hosting.</li>
+
+              <a href='https://theyellowanchor.netlify.app/' target='_blank'>click here.</a>
+            </ul>
+          </div>
+          <div className="col-lg-6">
+            <img src={wed} alt="Ayushman" className='img-fluid project-image' />
+          </div>
+        </div>
+        <div className='row content-3 mb-4'>
+          <div className="col-lg-6">
+            <img src={forex} alt="Ayushman" className='img-fluid project-image' />
+          </div>
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <h3>Forex Project</h3>
+            <ul>
+              <li>Engineered a responsive money exchange app to manage multi-currency transactions and rate settings across branches.</li>
+              <li>Built a user-friendly money exchange web app to manage multi-currency transactions across branches..</li>
+              <li>Implemented UI components in React and TypeScript, with strong form validation using Zod.</li>
+
+            </ul>
+          </div>
+          
+        </div>
+      </div>
       <div className='row content-3'>
 
         <div className="col-lg-12">
@@ -101,7 +134,7 @@ const Projects = () => {
           <div className="col-lg-6">
             <img src={crm} alt="CRM" className='img-fluid project-image' />
           </div>
-        </div> 
+        </div>
         <div className='row content-3 mb-4'>
           <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
             <h3>Restaurant ERP</h3>
@@ -138,7 +171,7 @@ const Projects = () => {
             <img src={hall} alt="hall" className='img-fluid project-image' />
           </div>
         </div>
-       
+
 
         <div className='row content-3 mb-4'>
           <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
