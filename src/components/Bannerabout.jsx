@@ -1,10 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { ArrowRight, Download, ExternalLink, GitBranch, Mail, Send } from 'lucide-react';
+import {  Download, ExternalLink, GitBranch, Mail } from 'lucide-react';
 import ima from '../assets/images/dev.png';
 import pdfUrl from '../assets/images/MANJIMA PRASAD.pdf';
-import { Link } from 'react-router-dom';
 
 const Bannerabout = () => {
   const downloadPdf = () => {

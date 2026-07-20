@@ -43,12 +43,12 @@ const Footers = () => {
           </div>
         </div>
       </div>
-      {/* <div className="footer-bottom">
+      <div className="footer-bottom">
        
-        <button type="button" className="scroll-top" onClick={scrollTop} aria-label="Back to top">
-          <ArrowUp size={16} />
-        </button>
-      </div> */}
+       <button type="button" className="scroll-top" onClick={scrollTop} aria-label="Back to top">
+         <ArrowUp size={16} />
+       </button>
+       </div>
     </footer>
   );
 };
