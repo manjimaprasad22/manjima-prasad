@@ -1,70 +1,61 @@
-import React from 'react'
+import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import '../assets/style.css'
-import { Link, Element } from 'react-scroll';
-import pull from '../assets/images/pull.png'
+import '../assets/style.css';
+import { Link } from 'react-scroll';
+import { GitBranch, Moon, Sun } from 'lucide-react';
 
-const NavBarComp = () => {     
-  const handlegit=()=>{
-    const url ='https://github.com/manjimaprasad22'
-    window.open(url, '_blank');
-} 
+const NavBarComp = ({ activeSection, theme, setTheme }) => {
+  const navItems = [
+    { label: 'About', target: 'About' },
+    { label: 'Skills', target: 'Skills' },
+    { label: 'Experience', target: 'Experience' },
+    { label: 'Projects', target: 'Projects' },
+    { label: 'Education', target: 'Education' },
+    { label: 'Hire me', target: 'hire' },
+  ];
+
   return (
-    
-       <Navbar collapseOnSelect expand="lg" className=" navbar-body fixed-top nav-background" >
+    <Navbar expand="lg" fixed="top" className="floating-nav">
       <Container>
-        <Navbar.Brand href="#home" style={{width:"30%"}} className='logo'>
-        {/* <img src={logo} className='nav-logo' style={{width:"70px"}}/> */}
-        Manjima
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" >
-          <Nav className=" nav-items text-center">
-            
-            {/* <NavDropdown title="Product" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Product</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Service" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Service</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
-            {/* <div className="nav_items"> */}
-              <Nav className='m-3'>
-                <Link to="About" smooth={true} duration={400}>About</Link></Nav>
-            <Nav className='m-3'> <Link to="Skills" smooth={true} duration={400}>Skills</Link></Nav>
-            <Nav className='m-3'><Link to="Experience" smooth={true} duration={400}>Experience</Link></Nav>
-            <Nav className='m-3'> <Link to="Projects" smooth={true} duration={400}>Projects</Link></Nav>
-            <Nav className='m-3'><Link to="Education" smooth={true} duration={400}>Education</Link></Nav>
-            <Nav className='m-3'><Link to="hire" smooth={true} duration={400}>Hire me</Link></Nav>
-            {/* </div> */}
-            
-            <Nav>
-              <button className='btn' onClick={handlegit}> <i className="fab fa-github"></i> Github <img src={pull} alt="" className='pull' /></button>
-            </Nav>
-          </Nav>
-          
+        <Link to="About" smooth={true} duration={500} offset={-80} className="brand-mark">
+          MP
+        </Link>
+
+        <div className="nav-actions">
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            aria-label="Toggle color theme"
+          >
+            {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+          </button>
+          <Navbar.Toggle aria-controls="portfolio-nav" />
+        </div>
+
+        <Navbar.Collapse id="portfolio-nav">
+          <div className="nav-links">
+            {navItems.map((item) => (
+              <Link
+                key={item.target}
+                to={item.target}
+                smooth={true}
+                duration={500}
+                offset={-80}
+                className={`nav-link-item ${activeSection === item.target ? 'active' : ''}`}
+              >
+                {item.label}
+              </Link>
+            ))}
+            <a className="pill-button" href="https://github.com/manjimaprasad22" target="_blank" rel="noreferrer">
+              <GitBranch size={16} /> GitHub
+            </a>
+          </div>
         </Navbar.Collapse>
       </Container>
-    </Navbar> 
-   
-  )
-}
+    </Navbar>
+  );
+};
 
-export default NavBarComp
+export default NavBarComp;
