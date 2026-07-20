@@ -41,13 +41,7 @@ const Bannerabout = () => {
           <button type="button" className="primary-button" onClick={downloadPdf}>
             <Download size={18} /> Download Resume
           </button>
-          {/* <Link className="secondary-button" key="hire"
-                to="hire"
-                smooth={true}
-                duration={500}
-                offset={-80}>
-            <Send size={18} /> Contact Me
-          </Link> */}
+        
         </div>
 
         <div className="social-row">
